@@ -1,0 +1,80 @@
+.form {
+  display: flex;
+  max-width: 700px;
+  flex-wrap: wrap;
+  margin: 60px auto;
+  gap: 20px;
+  justify-content: center;
+}
+
+.form input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form input.error {
+  border-color: red;
+}
+
+.form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form button:hover {
+  background-color: #e0e0e0;
+}
+
+.form button:active {
+  background-color: #d0d0d0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error-msg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  top: 4px;
+  left: 0;
+  flex-wrap: wrap;
+}
+
+.error-msg p {
+  padding: 0;
+  margin: 0;
+}
+
+.error-msg p::after {
+  content: ', ';
+}
+
+.error-msg p:last-child::after {
+  content: '';
+}
+
+#packages {
+  margin: 60px auto;
+  width: 100%;
+  border-spacing: 0;
+}
+
+#packages th {
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+#packages td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
