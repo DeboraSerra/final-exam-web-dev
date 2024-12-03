@@ -176,6 +176,7 @@ window.onload = () => {
   const storedPackages = localStorage.getItem("packages");
   if (storedPackages) {
     packages = JSON.parse(storedPackages);
+    mergeSort(packages, 0, packages.length - 1);
     renderPackages();
   }
   const form = document.querySelector("form");
