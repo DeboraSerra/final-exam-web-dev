@@ -18,7 +18,7 @@ function merge(arr, left, middle, right) {
   let j = 0;
   let k = left;
   while (i < l1 && j < l2) {
-    if (arr1[i].weight < arr2[j].weight) {
+    if (+arr1[i].weight < +arr2[j].weight) {
       arr[k] = arr1[i];
       i += 1;
     } else {
